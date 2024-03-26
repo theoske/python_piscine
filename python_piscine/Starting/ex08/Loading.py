@@ -1,7 +1,7 @@
 from time import time
 from time import perf_counter
 
-def ft_tqdm(lst: range) -> None:
+def ft_tqdm(lst: range):
     range_end = lst[-1] + 1
     start_time = perf_counter() * 10**6 
     yield
