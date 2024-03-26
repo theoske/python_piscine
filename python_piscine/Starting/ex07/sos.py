@@ -1,5 +1,5 @@
 from sys import argv
-import unicodedata
+from unicodedata import unicodedata
 
 
 def argTester(argv) -> bool:
