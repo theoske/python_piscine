@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='myfirstpackage',  # Replace with your package name
+    name='myfirstpackageformypiscine',  # Replace with your package name
     version='0.0.1',   # Replace with your package version
     author='theoske',  # Replace with your name
     author_email='theokempf@protonmail.com',  # Replace with your email
@@ -9,8 +9,7 @@ setup(
     url='https://github.com/theoske/python_piscine/Starting/ex09/',  # Replace with your package URL
     packages=find_packages(),  # Automatically find packages in the directory
     classifiers=[
-        'Development Status :: 3',
-        'Intended Audience :: no one / everyone',
+        'Development Status :: 3 - Alpha',
         'Topic :: Software Development :: Libraries',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',

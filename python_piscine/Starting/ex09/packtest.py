@@ -1,6 +1,6 @@
-from myfirstpackage.Loading import ft_tqdm
+from myfirstpackageformypiscine.Loading import loading
 from time import sleep
 
-for elem in ft_tqdm(range(333)):
+for elem in loading(range(333)):
     sleep(0.005)
 print()
