@@ -1,7 +1,7 @@
 from time import perf_counter
 from os import get_terminal_size, system, name
 
-def loading(lst: range):
+def ft_tqdm(lst: range):
     width = get_terminal_size().columns
     coeff = (width - 46)/width
     range_end = lst[-1] + 1
