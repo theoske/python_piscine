@@ -13,7 +13,7 @@ def give_bmi(height_list: list[int | float], weight_list: list[int | float]) -> 
 
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     try:
-        is_below_limit = [True if bmi_value <= limit else False for bmi_value in bmi]
+        is_below_limit = [True if bmi_value > limit else False for bmi_value in bmi]
         return is_below_limit
     except TypeError:
         print("Arguments error: wrong bmi list type.")
