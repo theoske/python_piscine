@@ -1,4 +1,5 @@
 from PIL import Image
+from zoom import zoom
 
 def ft_load(path: str) -> list:
     image = Image.open(path)
@@ -9,6 +10,7 @@ def ft_load(path: str) -> list:
             pixel = image.getpixel((x, y))
             pixels.append(pixel)
     print("The image format is: " + str(x_max) + "x" + str(y_max) + " " + str(image.format))
+    zoom(path, 2)
     return pixels
 
 
