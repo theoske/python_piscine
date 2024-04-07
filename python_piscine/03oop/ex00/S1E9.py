@@ -1,9 +1,13 @@
 from abc import ABC, abstractmethod
 
 class Character(ABC):
+    @abstractmethod
     def __init__(self, first_name: str, is_alive: bool) -> None:
-        self.first_name = first_name
-        self.is_alive = is_alive
+        pass
+
+    @abstractmethod
+    def die(cls):
+        pass
 
 
 class Stark(Character):
@@ -11,7 +15,8 @@ class Stark(Character):
     
     def __init__(self, first_name :str, is_alive = True) -> None:
         """constructor docstring"""
-        super().__init__(first_name, is_alive)
+        self.first_name = first_name
+        self.is_alive = is_alive
 
     def die(cls):
         """method docstring"""
@@ -20,6 +25,7 @@ class Stark(Character):
     
 
 Ned = Stark("Ned")
+# hodor = Character("Hodor")
 print(Ned.__dict__)
 print(Ned.is_alive)
 Ned.die()
